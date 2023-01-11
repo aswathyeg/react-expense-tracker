@@ -16,7 +16,7 @@ const AddTransaction = () => {
           <Form.Control type="number" placeholder="Enter Amount" />
         </Form.Group>
 
-        <Button variant="primary" type="submit">
+        <Button className="addButton" type="submit">
           Submit
         </Button>
       </Form>
