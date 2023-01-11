@@ -1,7 +1,7 @@
 import React from "react";
 
 const Balance = () => {
-  return <div>Balance</div>;
+  return <div>Your Balance</div>;
 };
 
 export default Balance;
