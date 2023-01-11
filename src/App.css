@@ -1,9 +1,33 @@
 .App {
   text-align: center;
+
+ 
 }
+.expense{
+  margin-top: 3%;
+}
+
 .ieCard{
+  
   display: flex;
   justify-content: center;
+  margin-bottom: 3%;
+ 
+}
+.expenseList{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  margin-bottom: 3%;
+}
+.expenseForm{
+  display:grid;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  
+
 }
 
 /* .App-logo {
