@@ -2,18 +2,19 @@ import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 const AddTransaction = () => {
-  const [text, seText] = useState("");
+  const [text, setText] = useState("");
   const [amount, setAmount] = useState(0);
   const handleText = (e) => {
-    seText(e.target.value);
+    setText(e.target.value);
   };
   const handleAmount = (e) => {
     setAmount(e.target.value);
   };
+  const handleSubmit = () => {};
   return (
     <div>
       <h5>Add New Transaction</h5>
-      <Form className="expenseForm">
+      <Form className="expenseForm" onSubmit={handleSubmit}>
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Label>Text</Form.Label>
           <Form.Control
