@@ -14,7 +14,11 @@
   display: flex;
   justify-content: center;
   margin-bottom: 3%;
+  
  
+}
+.headerNavbar{
+  background-color:rgb(43, 226, 171)!important;
 }
 .expenseList{
   display: flex;
