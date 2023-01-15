@@ -1,16 +1,26 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
+import { ExpenseContext } from "../context/GlobalState";
 const AddTransaction = () => {
   const [text, setText] = useState("");
   const [amount, setAmount] = useState(0);
+  const { addTransaction } = useContext(ExpenseContext);
   const handleText = (e) => {
     setText(e.target.value);
   };
   const handleAmount = (e) => {
     setAmount(e.target.value);
   };
-  const handleSubmit = () => {};
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const newTransation = {
+      id: Math.floor(Math.random() * 100000000),
+      text,
+      amount: +amount,
+    };
+    addTransaction(newTransation);
+  };
   return (
     <div>
       <h5>Add New Transaction</h5>
