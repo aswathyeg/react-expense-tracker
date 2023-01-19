@@ -1,19 +1,22 @@
-import React from "react";
+import React, { useContext } from "react";
 import ListGroup from "react-bootstrap/ListGroup";
+import { GlobalContext } from "../context/GlobalState";
+import { Transaction } from "./Transaction";
 
-const History = () => {
+export const History = () => {
+  const { transactions } = useContext(GlobalContext);
+  //console.log(transactions);
   return (
-    <div className="expenseList">
-      {" "}
+    // <div className="expenseList">
+    //   {" "}
+    <>
+      <h5>History</h5>
       <ListGroup variant="flush">
-        <h5>History</h5>
-        <ListGroup.Item>Cras justo odio</ListGroup.Item>
-        <ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>
-        <ListGroup.Item>Morbi leo risus</ListGroup.Item>
-        <ListGroup.Item>Porta ac consectetur ac</ListGroup.Item>
+        {transactions.map((transaction) => (
+          <Transaction key={transaction.id} transaction={transaction} />
+        ))}
       </ListGroup>
-    </div>
+    </>
+    // </div>
   );
 };
-
-export default History;
