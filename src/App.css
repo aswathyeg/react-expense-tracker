@@ -18,6 +18,22 @@
   
  
 }
+/* .delete-btn {
+  cursor: pointer;
+  background-color: #e74c3c;
+  border: 0;
+  color: #fff;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 2px 5px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-100%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+} */
+
 .headerNavbar{
   background-color:rgb(43, 226, 171)!important;
 }
@@ -35,6 +51,30 @@
   max-width: 100%;
   
 
+}
+
+.minus{
+  color: #c0392b !important;
+
+}
+
+.plus{
+  color: #2ecc71!important;
+}
+.delete-btn{
+  cursor: pointer;
+  background-color: #e74c3c;
+  border: 0;
+  color: #fff;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 2px 5px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-100%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
 /* .App-logo {
